@@ -16,7 +16,7 @@ const getData = async function (query, limit) {
     //generating markup
     generateMarkups(data);
   } catch (err) {
-    console.error(err);
+    alert(err);
   }
 };
 // getData("laugh", 1);
@@ -30,12 +30,6 @@ searchButton.addEventListener("click", function () {
     alert("Input the Gif and limit");
   }
 });
-
-// searchButton.addEventListener("click", function () {
-//   inputValue.value = "";
-//   let query = inputValue.value;
-//   console.log(inputValue.value);
-// });
 
 const generateMarkups = function (data) {
   resultContainer.innerHTML = "";
@@ -59,5 +53,21 @@ const generateMarkups = function (data) {
           </div>`;
 
     resultContainer.insertAdjacentHTML("beforeend", markup);
+  });
+  //link copy func
+  const copyLinkButtons = document.querySelectorAll(".copy-link-btn");
+
+  copyLinkButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const link = this.getAttribute("data-link");
+      navigator.clipboard
+        .writeText(link)
+        .then(() => {
+          alert("Link copied to clipboard!");
+        })
+        .catch((err) => {
+          console.error("Failed to copy:", err);
+        });
+    });
   });
 };
