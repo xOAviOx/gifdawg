@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-top {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search-bar {
+  width: 500px; /* Increased width for input field */
+  padding: 15px; /* Larger padding */
+  font-size: 18px; /* Larger font size */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-btn {
+  padding: 10px 15px; /* Smaller button size */
+  font-size: 14px; /* Smaller font size */
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px; /* Matches the height of the input field */
+  display: flex;
+  align-items: center; /* Centers text vertically */
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Maintain spacing between input and button */
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Top Section */
+.section-top {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar {
+  width: 500px;
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Results Section */
+.section-results {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.section-results h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.results-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.results-container img:hover {
+  transform: scale(1.05);
+}
+
+/* GIF Card Styles */
+.gif-card {
+  width: 220px; /* Slightly larger than the GIF size */
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gif-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gif-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures the GIF fits nicely in the card */
+}
+
+.gif-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.gif-title {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gif-source {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.gif-source:hover {
+  text-decoration: underline;
+}
+
