@@ -97,21 +97,24 @@ body {
 }
 
 .search-btn {
-  padding: 10px 15px;
-  font-size: 14px;
+  padding: 5px 10px; /* Reduce padding */
+  font-size: 14px; /* Slightly smaller font size */
   color: #fff;
   background-color: #007bff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  height: 50px;
+  height: 40px; /* Reduce height */
+  width: auto; /* Adjust width automatically based on content */
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .search-btn:hover {
   background-color: #0056b3;
 }
+
 
 /* Results Section */
 .section-results {

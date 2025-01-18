@@ -3,13 +3,8 @@ import { API_KEY } from "./api.js";
 
 const resultContainer = document.querySelector(".results-container");
 const inputValue = document.querySelector(".input-text");
+const inputLimit = document.querySelector(".input-limit");
 const searchButton = document.querySelector(".search-btn");
-
-searchButton.addEventListener("click", function () {
-  inputValue.textContent = "";
-  let query = inputValue.value;
-  return query
-});
 
 const getData = async function (query, limit) {
   try {
@@ -24,6 +19,23 @@ const getData = async function (query, limit) {
     console.error(err);
   }
 };
+// getData("laugh", 1);
+searchButton.addEventListener("click", function () {
+  if (inputValue.value && inputLimit.value) {
+    let query = inputValue.value;
+    let limit = inputLimit.value;
+    getData(query, limit);
+    inputValue.value = inputLimit.value = "";
+  } else {
+    alert("Input the Gif and limit");
+  }
+});
+
+// searchButton.addEventListener("click", function () {
+//   inputValue.value = "";
+//   let query = inputValue.value;
+//   console.log(inputValue.value);
+// });
 
 const generateMarkups = function (data) {
   resultContainer.innerHTML = "";
