@@ -1,6 +1,7 @@
 // import { stat } from "fs"
 import { API_KEY } from "./api.js";
 
+//Selecting the elements
 const resultContainer = document.querySelector(".results-container");
 const inputValue = document.querySelector(".input-text");
 const inputLimit = document.querySelector(".input-limit");
