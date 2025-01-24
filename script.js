@@ -7,6 +7,7 @@ const inputValue = document.querySelector(".input-text");
 const inputLimit = document.querySelector(".input-limit");
 const searchButton = document.querySelector(".search-btn");
 
+//Getting the response
 const getData = async function (query, limit) {
   try {
     const resp = await fetch(
