@@ -42,7 +42,7 @@ const generateMarkups = function (data) {
       title: gif.title,
       sourceUrl: gif.url,
     };
-
+//Markup
     const markup = `
         <div class="gif-card">
           <img src="${gifData.imageUrl}" alt="${gifData.title}" class="gif-image">
